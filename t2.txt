@@ -1,0 +1,1 @@
+IN this text file described creation of jenins using terraform script.
