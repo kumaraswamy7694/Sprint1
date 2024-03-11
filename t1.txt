@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jenkins Server Setup in Linux VM #
 
 ## Step - 1 : Create Linux VM ##
@@ -50,3 +51,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 	   
 ## Step-8 : Create Admin Account & Install Required Plugins in Jenkins ##
+=======
+In the file t1.txt contain the details related to Task of sprint 1.
+Created Ec2 instance manually and install Jenkins 
+1 ) created ec2 instance using ubuntu latest version and deploy jenkins manually .
+>>>>>>> ec27af8c579441a0e991d2de420ce3238c748ff7
