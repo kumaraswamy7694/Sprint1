@@ -1,0 +1,5 @@
+this text file is created to describe task 3 belongs to sprint 1
+
+> installed jenkins using terraform script 
+> and run some basic job in jenkins using public repository
+> installed some plugins which is essential 
