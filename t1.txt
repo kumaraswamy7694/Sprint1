@@ -1,0 +1,3 @@
+In the file t1.txt contain the details related to Task of sprint 1.
+Created Ec2 instance manually and install Jenkins 
+1 ) created ec2 instance using ubuntu latest version and deploy jenkins manually .
