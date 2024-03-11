@@ -1,1 +1,31 @@
 IN this text file described creation of jenins using terraform script.
+--------------------------------------------------------------------------------------
+using this terraform script created jenkins.
+
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = ""
+  secret_key = ""
+}
+
+resource "aws_instance" "JS" {
+  ami                    = "ami-03bb6d83c60fc5f7c"  
+  instance_type          = "t2.micro" 
+  security_groups = ["JenSG"]
+  key_name = "kalyan"   
+  tags = {
+    Name = "jenkins server by tf"
+  }
+  user_data = <<-EOF
+        #! /bin/bash
+        sudo apt update -y #update the repository
+        sudo apt install openjdk-11-jdk -y
+        sudo apt install git -y
+        wget https://get.jenkins.io/war-stable/2.440.1/jenkins.war
+        java -jar jenkins.war
+    EOF
+}
+
+output "JS"{
+    value = aws_instance.JS.public_ip
+}
